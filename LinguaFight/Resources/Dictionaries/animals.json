@@ -1,0 +1,380 @@
+﻿{
+  "Entries": [
+    {
+      "Ukr": "кіт",
+      "Eng": "cat"
+    },
+    {
+      "Ukr": "собака",
+      "Eng": "dog"
+    },
+    {
+      "Ukr": "миша",
+      "Eng": "mouse"
+    },
+    {
+      "Ukr": "щур",
+      "Eng": "rat"
+    },
+    {
+      "Ukr": "кінь",
+      "Eng": "horse"
+    },
+    {
+      "Ukr": "корова",
+      "Eng": "cow"
+    },
+    {
+      "Ukr": "бик",
+      "Eng": "bull"
+    },
+    {
+      "Ukr": "свиня",
+      "Eng": "pig"
+    },
+    {
+      "Ukr": "вівця",
+      "Eng": "sheep"
+    },
+    {
+      "Ukr": "коза",
+      "Eng": "goat"
+    },
+
+    {
+      "Ukr": "курка",
+      "Eng": "chicken"
+    },
+    {
+      "Ukr": "півень",
+      "Eng": "rooster"
+    },
+    {
+      "Ukr": "качка",
+      "Eng": "duck"
+    },
+    {
+      "Ukr": "гусак",
+      "Eng": "goose"
+    },
+    {
+      "Ukr": "індик",
+      "Eng": "turkey"
+    },
+
+    {
+      "Ukr": "лев",
+      "Eng": "lion"
+    },
+    {
+      "Ukr": "тигр",
+      "Eng": "tiger"
+    },
+    {
+      "Ukr": "пантера",
+      "Eng": "panther"
+    },
+    {
+      "Ukr": "леопард",
+      "Eng": "leopard"
+    },
+    {
+      "Ukr": "ягуар",
+      "Eng": "jaguar"
+    },
+
+    {
+      "Ukr": "вовк",
+      "Eng": "wolf"
+    },
+    {
+      "Ukr": "лисиця",
+      "Eng": "fox"
+    },
+    {
+      "Ukr": "ведмідь",
+      "Eng": "bear"
+    },
+    {
+      "Ukr": "бобер",
+      "Eng": "beaver"
+    },
+    {
+      "Ukr": "єнот",
+      "Eng": "raccoon"
+    },
+
+    {
+      "Ukr": "олень",
+      "Eng": "deer"
+    },
+    {
+      "Ukr": "лось",
+      "Eng": "moose"
+    },
+    {
+      "Ukr": "антилопа",
+      "Eng": "antelope"
+    },
+    {
+      "Ukr": "зебра",
+      "Eng": "zebra"
+    },
+    {
+      "Ukr": "жираф",
+      "Eng": "giraffe"
+    },
+
+    {
+      "Ukr": "слон",
+      "Eng": "elephant"
+    },
+    {
+      "Ukr": "носоріг",
+      "Eng": "rhinoceros"
+    },
+    {
+      "Ukr": "бегемот",
+      "Eng": "hippopotamus"
+    },
+    {
+      "Ukr": "верблюд",
+      "Eng": "camel"
+    },
+    {
+      "Ukr": "лама",
+      "Eng": "llama"
+    },
+
+    {
+      "Ukr": "кролик",
+      "Eng": "rabbit"
+    },
+    {
+      "Ukr": "заєць",
+      "Eng": "hare"
+    },
+    {
+      "Ukr": "білка",
+      "Eng": "squirrel"
+    },
+    {
+      "Ukr": "їжак",
+      "Eng": "hedgehog"
+    },
+    {
+      "Ukr": "кріт",
+      "Eng": "mole"
+    },
+
+    {
+      "Ukr": "жаба",
+      "Eng": "frog"
+    },
+    {
+      "Ukr": "ропуха",
+      "Eng": "toad"
+    },
+    {
+      "Ukr": "ящірка",
+      "Eng": "lizard"
+    },
+    {
+      "Ukr": "змія",
+      "Eng": "snake"
+    },
+    {
+      "Ukr": "крокодил",
+      "Eng": "crocodile"
+    },
+
+    {
+      "Ukr": "акула",
+      "Eng": "shark"
+    },
+    {
+      "Ukr": "дельфін",
+      "Eng": "dolphin"
+    },
+    {
+      "Ukr": "кит",
+      "Eng": "whale"
+    },
+    {
+      "Ukr": "морж",
+      "Eng": "walrus"
+    },
+    {
+      "Ukr": "тюлень",
+      "Eng": "seal"
+    },
+
+    {
+      "Ukr": "риба",
+      "Eng": "fish"
+    },
+    {
+      "Ukr": "форель",
+      "Eng": "trout"
+    },
+    {
+      "Ukr": "лосось",
+      "Eng": "salmon"
+    },
+    {
+      "Ukr": "окунь",
+      "Eng": "perch"
+    },
+    {
+      "Ukr": "карась",
+      "Eng": "crucian"
+    },
+
+    {
+      "Ukr": "орел",
+      "Eng": "eagle"
+    },
+    {
+      "Ukr": "сокіл",
+      "Eng": "falcon"
+    },
+    {
+      "Ukr": "совa",
+      "Eng": "owl"
+    },
+    {
+      "Ukr": "ворон",
+      "Eng": "raven"
+    },
+    {
+      "Ukr": "голуб",
+      "Eng": "pigeon"
+    },
+
+    {
+      "Ukr": "метелик",
+      "Eng": "butterfly"
+    },
+    {
+      "Ukr": "бджола",
+      "Eng": "bee"
+    },
+    {
+      "Ukr": "оса",
+      "Eng": "wasp"
+    },
+    {
+      "Ukr": "мураха",
+      "Eng": "ant"
+    },
+    {
+      "Ukr": "жук",
+      "Eng": "beetle"
+    },
+
+    {
+      "Ukr": "павук",
+      "Eng": "spider"
+    },
+    {
+      "Ukr": "скорпіон",
+      "Eng": "scorpion"
+    },
+    {
+      "Ukr": "кліщ",
+      "Eng": "tick"
+    },
+    {
+      "Ukr": "таракан",
+      "Eng": "cockroach"
+    },
+    {
+      "Ukr": "богомол",
+      "Eng": "mantis"
+    },
+
+    {
+      "Ukr": "пінгвін",
+      "Eng": "penguin"
+    },
+    {
+      "Ukr": "фламінго",
+      "Eng": "flamingo"
+    },
+    {
+      "Ukr": "пелікан",
+      "Eng": "pelican"
+    },
+    {
+      "Ukr": "чайка",
+      "Eng": "seagull"
+    },
+    {
+      "Ukr": "журавель",
+      "Eng": "crane"
+    },
+
+    {
+      "Ukr": "коала",
+      "Eng": "koala"
+    },
+    {
+      "Ukr": "кенгуру",
+      "Eng": "kangaroo"
+    },
+    {
+      "Ukr": "опосум",
+      "Eng": "opossum"
+    },
+    {
+      "Ukr": "динго",
+      "Eng": "dingo"
+    },
+    {
+      "Ukr": "ему",
+      "Eng": "emu"
+    },
+
+    {
+      "Ukr": "мавпа",
+      "Eng": "monkey"
+    },
+    {
+      "Ukr": "горила",
+      "Eng": "gorilla"
+    },
+    {
+      "Ukr": "шимпанзе",
+      "Eng": "chimpanzee"
+    },
+    {
+      "Ukr": "орангутан",
+      "Eng": "orangutan"
+    },
+    {
+      "Ukr": "бабуїн",
+      "Eng": "baboon"
+    },
+
+    {
+      "Ukr": "вепр",
+      "Eng": "boar"
+    },
+    {
+      "Ukr": "манул",
+      "Eng": "pallas cat"
+    },
+    {
+      "Ukr": "капібарa",
+      "Eng": "capybara"
+    },
+    {
+      "Ukr": "видра",
+      "Eng": "otter"
+    },
+    {
+      "Ukr": "ласка",
+      "Eng": "weasel"
+    }
+  ]
+}

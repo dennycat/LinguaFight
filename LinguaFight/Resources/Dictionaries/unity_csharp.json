@@ -1,0 +1,360 @@
+﻿{
+  "Entries": [
+    {
+      "Ukr": "Оголосити змінну цілого типу",
+      "Eng": "int value;"
+    },
+    {
+      "Ukr": "Оголосити змінну з плаваючою точкою",
+      "Eng": "float speed;"
+    },
+    {
+      "Ukr": "Оголосити рядкову змінну",
+      "Eng": "string name;"
+    },
+    {
+      "Ukr": "Оголосити булеву змінну",
+      "Eng": "bool isActive;"
+    },
+    {
+      "Ukr": "Оголосити масив цілих чисел",
+      "Eng": "int[] numbers;"
+    },
+
+    {
+      "Ukr": "Створити список цілих чисел",
+      "Eng": "List<int> list = new();"
+    },
+    {
+      "Ukr": "Додати елемент у список",
+      "Eng": "list.Add(value);"
+    },
+    {
+      "Ukr": "Видалити елемент зі списку",
+      "Eng": "list.Remove(value);"
+    },
+    {
+      "Ukr": "Очистити список",
+      "Eng": "list.Clear();"
+    },
+    {
+      "Ukr": "Перевірити кількість елементів",
+      "Eng": "list.Count"
+    },
+
+    {
+      "Ukr": "Створити новий клас",
+      "Eng": "public class Player {}"
+    },
+    {
+      "Ukr": "Створити конструктор класу",
+      "Eng": "public Player() {}"
+    },
+    {
+      "Ukr": "Створити публічне поле",
+      "Eng": "public int health;"
+    },
+    {
+      "Ukr": "Створити приватне поле",
+      "Eng": "private int score;"
+    },
+    {
+      "Ukr": "Створити властивість",
+      "Eng": "public int Health { get; set; }"
+    },
+
+    {
+      "Ukr": "Викликати метод",
+      "Eng": "DoSomething();"
+    },
+    {
+      "Ukr": "Створити метод без параметрів",
+      "Eng": "void Jump() {}"
+    },
+    {
+      "Ukr": "Створити метод з параметром",
+      "Eng": "void Move(float speed) {}"
+    },
+    {
+      "Ukr": "Повернути значення з методу",
+      "Eng": "return value;"
+    },
+    {
+      "Ukr": "Створити статичний метод",
+      "Eng": "static void Log() {}"
+    },
+
+    {
+      "Ukr": "Перевірка умови",
+      "Eng": "if (x > 0) {}"
+    },
+    {
+      "Ukr": "Альтернативна умова",
+      "Eng": "else {}"
+    },
+    {
+      "Ukr": "Умова інакше якщо",
+      "Eng": "else if (x < 0) {}"
+    },
+    {
+      "Ukr": "Тернарний оператор",
+      "Eng": "var r = x > 0 ? a : b;"
+    },
+    {
+      "Ukr": "Перевірка рівності",
+      "Eng": "if (a == b) {}"
+    },
+
+    {
+      "Ukr": "Цикл for",
+      "Eng": "for (int i = 0; i < n; i++) {}"
+    },
+    {
+      "Ukr": "Цикл while",
+      "Eng": "while (x < 10) {}"
+    },
+    {
+      "Ukr": "Цикл foreach",
+      "Eng": "foreach (var item in list) {}"
+    },
+    {
+      "Ukr": "Вийти з циклу",
+      "Eng": "break;"
+    },
+    {
+      "Ukr": "Пропустити ітерацію",
+      "Eng": "continue;"
+    },
+
+    {
+      "Ukr": "Створити Unity-компонент",
+      "Eng": "public class Player : MonoBehaviour {}"
+    },
+    {
+      "Ukr": "Метод Start",
+      "Eng": "void Start() {}"
+    },
+    {
+      "Ukr": "Метод Update",
+      "Eng": "void Update() {}"
+    },
+    {
+      "Ukr": "Метод FixedUpdate",
+      "Eng": "void FixedUpdate() {}"
+    },
+    {
+      "Ukr": "Метод Awake",
+      "Eng": "void Awake() {}"
+    },
+
+    {
+      "Ukr": "Отримати компонент",
+      "Eng": "GetComponent<Rigidbody>();"
+    },
+    {
+      "Ukr": "Отримати компонент з дитини",
+      "Eng": "GetComponentInChildren<Collider>();"
+    },
+    {
+      "Ukr": "Отримати всі компоненти",
+      "Eng": "GetComponents<AudioSource>();"
+    },
+    {
+      "Ukr": "Отримати компонент з батька",
+      "Eng": "GetComponentInParent<Transform>();"
+    },
+    {
+      "Ukr": "Перевірити наявність компонента",
+      "Eng": "TryGetComponent(out Rigidbody rb);"
+    },
+
+    {
+      "Ukr": "Перемістити об’єкт",
+      "Eng": "transform.position += Vector3.forward;"
+    },
+    {
+      "Ukr": "Повернути об’єкт",
+      "Eng": "transform.Rotate(0, 90, 0);"
+    },
+    {
+      "Ukr": "Змінити масштаб",
+      "Eng": "transform.localScale = Vector3.one;"
+    },
+    {
+      "Ukr": "Отримати позицію",
+      "Eng": "transform.position"
+    },
+    {
+      "Ukr": "Отримати ротацію",
+      "Eng": "transform.rotation"
+    },
+
+    {
+      "Ukr": "Створити префаб",
+      "Eng": "Instantiate(prefab);"
+    },
+    {
+      "Ukr": "Створити префаб у позиції",
+      "Eng": "Instantiate(prefab, pos, rot);"
+    },
+    {
+      "Ukr": "Знищити об’єкт",
+      "Eng": "Destroy(gameObject);"
+    },
+    {
+      "Ukr": "Знищити об’єкт із затримкою",
+      "Eng": "Destroy(gameObject, 2f);"
+    },
+    {
+      "Ukr": "Перевірити активність об’єкта",
+      "Eng": "gameObject.activeSelf"
+    },
+
+    {
+      "Ukr": "Увімкнути об’єкт",
+      "Eng": "gameObject.SetActive(true);"
+    },
+    {
+      "Ukr": "Вимкнути об’єкт",
+      "Eng": "gameObject.SetActive(false);"
+    },
+    {
+      "Ukr": "Увімкнути компонент",
+      "Eng": "component.enabled = true;"
+    },
+    {
+      "Ukr": "Вимкнути компонент",
+      "Eng": "component.enabled = false;"
+    },
+    {
+      "Ukr": "Перевірити enabled",
+      "Eng": "component.enabled"
+    },
+
+    {
+      "Ukr": "Створити корутину",
+      "Eng": "StartCoroutine(MyRoutine());"
+    },
+    {
+      "Ukr": "Зупинити корутину",
+      "Eng": "StopCoroutine(MyRoutine());"
+    },
+    {
+      "Ukr": "Затримка в корутині",
+      "Eng": "yield return new WaitForSeconds(1f);"
+    },
+    {
+      "Ukr": "Затримка в кадрах",
+      "Eng": "yield return null;"
+    },
+    {
+      "Ukr": "Нескінченна корутина",
+      "Eng": "while(true) { yield return null; }"
+    },
+
+    {
+      "Ukr": "Створити подію",
+      "Eng": "public event Action OnJump;"
+    },
+    {
+      "Ukr": "Викликати подію",
+      "Eng": "OnJump?.Invoke();"
+    },
+    {
+      "Ukr": "Підписатися на подію",
+      "Eng": "OnJump += Jump;"
+    },
+    {
+      "Ukr": "Відписатися від події",
+      "Eng": "OnJump -= Jump;"
+    },
+    {
+      "Ukr": "Створити делегат",
+      "Eng": "public delegate void MyDelegate();"
+    },
+
+    {
+      "Ukr": "Завантажити сцену",
+      "Eng": "SceneManager.LoadScene(\"Game\");"
+    },
+    {
+      "Ukr": "Перезавантажити сцену",
+      "Eng": "SceneManager.LoadScene(SceneManager.GetActiveScene().name);"
+    },
+    {
+      "Ukr": "Отримати активну сцену",
+      "Eng": "SceneManager.GetActiveScene();"
+    },
+    {
+      "Ukr": "Асинхронне завантаження сцени",
+      "Eng": "SceneManager.LoadSceneAsync(\"Menu\");"
+    },
+    {
+      "Ukr": "Перевірити кількість сцен",
+      "Eng": "SceneManager.sceneCount"
+    },
+
+    {
+      "Ukr": "Створити таймер",
+      "Eng": "timer += Time.deltaTime;"
+    },
+    {
+      "Ukr": "Отримати час кадру",
+      "Eng": "Time.deltaTime"
+    },
+    {
+      "Ukr": "Отримати час гри",
+      "Eng": "Time.time"
+    },
+    {
+      "Ukr": "Отримати час реального світу",
+      "Eng": "Time.unscaledTime"
+    },
+    {
+      "Ukr": "Поставити паузу",
+      "Eng": "Time.timeScale = 0f;"
+    },
+
+    {
+      "Ukr": "Створити Rigidbody",
+      "Eng": "Rigidbody rb;"
+    },
+    {
+      "Ukr": "Додати силу",
+      "Eng": "rb.AddForce(Vector3.up * 5);"
+    },
+    {
+      "Ukr": "Додати імпульс",
+      "Eng": "rb.AddForce(Vector3.forward * 10, ForceMode.Impulse);"
+    },
+    {
+      "Ukr": "Зупинити рух",
+      "Eng": "rb.velocity = Vector3.zero;"
+    },
+    {
+      "Ukr": "Перевірити швидкість",
+      "Eng": "rb.velocity"
+    },
+
+    {
+      "Ukr": "Створити колайдер",
+      "Eng": "Collider col;"
+    },
+    {
+      "Ukr": "Перевірити зіткнення",
+      "Eng": "void OnCollisionEnter(Collision c) {}"
+    },
+    {
+      "Ukr": "Перевірити тригер",
+      "Eng": "void OnTriggerEnter(Collider c) {}"
+    },
+    {
+      "Ukr": "Вийти з тригера",
+      "Eng": "void OnTriggerExit(Collider c) {}"
+    },
+    {
+      "Ukr": "Перевірити тег",
+      "Eng": "if (c.CompareTag(\"Enemy\")) {}"
+    }
+  ]
+}

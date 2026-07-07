@@ -13,7 +13,7 @@ namespace LinguaFight
         private int _timerSeconds = 60;
 
         private UserManager _userManager;
-
+        //TEST
         // 🔥 Таймер між тренуваннями
         private DispatcherTimer? _trainingTimer;
 

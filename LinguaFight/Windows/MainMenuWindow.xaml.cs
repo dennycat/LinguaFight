@@ -13,7 +13,7 @@ namespace LinguaFight
         private int _timerSeconds = 60;
 
         private UserManager _userManager;
-        //TEST
+
         // 🔥 Таймер між тренуваннями
         private DispatcherTimer? _trainingTimer;
 
@@ -80,7 +80,6 @@ namespace LinguaFight
         {
             OpenTrainingWindow();
 
-            // Створюємо таймер, якщо його ще немає
             if (_trainingTimer == null)
             {
                 _trainingTimer = new DispatcherTimer();
@@ -98,7 +97,6 @@ namespace LinguaFight
         {
             var training = new TrainingWindow(_userManager, _selectedDictionary!, _timerSeconds);
 
-            // Коли тренування завершено → запускаємо таймер
             training.TrainingCompleted += () =>
             {
                 _trainingTimer?.Start();
@@ -129,10 +127,18 @@ namespace LinguaFight
             this.Close();
         }
 
+        // ⭐ Правильний метод для кнопки "Бій"
         private void Battle_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Бойова система ще в розробці!");
+            BattleWindow window = new BattleWindow();
+            window.Show();
         }
 
+        // Якщо десь використовується FightButton_Click — лишаємо
+        private void FightButton_Click(object sender, RoutedEventArgs e)
+        {
+            BattleWindow window = new BattleWindow();
+            window.Show();
+        }
     }
 }

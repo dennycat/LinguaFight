@@ -34,11 +34,13 @@ namespace LinguaFight.Windows
             _timerSeconds = timerSeconds;
 
             string filePath = Path.Combine(
-                AppDomain.CurrentDomain.BaseDirectory,
-                "Resources",
-                "Dictionaries",
-                $"{dictionaryName}.json"
-            );
+      AppDomain.CurrentDomain.BaseDirectory,
+      "Resources",
+      "Dictionaries",
+      dictionaryName,
+      $"{dictionaryName}.json"
+  );
+
 
             _dictionary = DictionaryLoader.LoadEncrypted(filePath)!;
 

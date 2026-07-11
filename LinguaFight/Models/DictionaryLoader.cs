@@ -26,18 +26,28 @@ namespace LinguaFight.Logic
 
         public static List<string> GetAvailableDictionaries()
         {
-            string folder = Path.Combine(
+            string basePath = Path.Combine(
                 AppDomain.CurrentDomain.BaseDirectory,
                 "Resources",
                 "Dictionaries"
             );
 
-            if (!Directory.Exists(folder))
+            if (!Directory.Exists(basePath))
                 return new List<string>();
 
-            return Directory.GetFiles(folder, "*.json")
-                            .Select(f => Path.GetFileNameWithoutExtension(f))
-                            .ToList();
+            var result = new List<string>();
+
+            foreach (var dir in Directory.GetDirectories(basePath))
+            {
+                string folderName = Path.GetFileName(dir);
+                string jsonPath = Path.Combine(dir, $"{folderName}.json");
+
+                if (File.Exists(jsonPath))
+                    result.Add(folderName);
+            }
+
+            return result;
         }
+
     }
 }

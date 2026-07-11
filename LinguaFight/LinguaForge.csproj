@@ -8,6 +8,9 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <!-- ❗ ВАЖЛИВО: Remove видаляємо -->
+  <!-- (ці блоки забороняли WPF бачити картинки) -->
+
   <ItemGroup>
     <None Remove="Resources\Dictionaries\animals.json" />
   </ItemGroup>
@@ -16,15 +19,24 @@
     <Content Include="Resources\Dictionaries\unity_csharp.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\Dictionaries\animals.json">
+    <Content Include="Resources\Dictionaries\Animals\Animals.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Logic\" />
+    <Folder Include="Resources\Dictionaries\Animals\Animations\" />
+    <Folder Include="Resources\Dictionaries\Animals\Sounds\" />
     <Folder Include="Resources\Icons\" />
     <Folder Include="Resources\Sounds\" />
+  </ItemGroup>
+
+  <!-- ❗ Картинки тепер копіюються автоматично -->
+  <ItemGroup>
+    <None Include="Resources\Dictionaries\Animals\Images\**\*.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

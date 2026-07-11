@@ -1,0 +1,150 @@
+﻿<Window x:Class="LinguaFight.Windows.BattleWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LinguaFight.Windows"
+        mc:Ignorable="d"
+        Title="BattleWindow" Height="450" Width="800"
+        KeyDown="Window_KeyDown">
+
+    <Grid Background="#1E1E1E">
+
+        <!-- 🟨 Монети у правому верхньому кутку -->
+        <TextBlock x:Name="CoinsDisplay"
+                   Text="Монети: 0"
+                   Foreground="White"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="0,0,10,0"
+                   Padding="5"
+                   TextWrapping="NoWrap"
+                   MinWidth="150"
+                   RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <ScaleTransform ScaleX="1" ScaleY="1"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+        <!-- 🟩 Анімація +N -->
+        <TextBlock x:Name="CoinsGainText"
+                   Text=""
+                   Foreground="#3AFF5A"
+                   FontSize="26"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Right"
+                   VerticalAlignment="Top"
+                   Margin="0 40 10 0"
+                   Opacity="0"/>
+        <!-- 🟥🟦🟩 FIGHT ARENA — окремий блок бою -->
+        <Grid x:Name="FightArena"
+      HorizontalAlignment="Center"
+      VerticalAlignment="Top"
+      Width="800"
+      Height="260"
+      Margin="0,20,0,0">
+
+            <!-- 🟩 HP робота -->
+            <Grid x:Name="RobotHPBar"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top"
+          Width="220"
+          Height="10"
+          Margin="70,20,0,0">
+
+                <Rectangle x:Name="RobotHPGreen"
+                   Fill="#3AFF5A"
+                   HorizontalAlignment="Left"
+                   Width="220"
+                   Height="10"/>
+
+                <Rectangle x:Name="RobotHPRed"
+                   Fill="#FF3A3A"
+                   HorizontalAlignment="Right"
+                   Width="0"
+                   Height="10"/>
+            </Grid>
+
+            <!-- 🟥 HP монстра -->
+            <Grid x:Name="MonsterHPBar"
+          HorizontalAlignment="Right"
+          VerticalAlignment="Top"
+          Width="220"
+          Height="10"
+          Margin="0,20,60,0">
+
+                <Rectangle x:Name="MonsterHPGreen"
+                   Fill="#3AFF5A"
+                   HorizontalAlignment="Left"
+                   Width="220"
+                   Height="10"/>
+
+                <Rectangle x:Name="MonsterHPRed"
+                   Fill="#FF3A3A"
+                   HorizontalAlignment="Right"
+                   Width="0"
+                   Height="10"/>
+            </Grid>
+
+            <!-- 🤖 Робот -->
+            <Image x:Name="RobotImage"
+           Width="160"
+           Height="160"
+           Stretch="Uniform"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Center"
+           Margin="116,0,0,0"
+           d:Source="/Resources/Dictionaries/Animals/Images/Robots/Robot_1/Robot_1.png"/>
+
+            <!-- 👾 Монстр -->
+            <Image x:Name="MonsterImage"
+           Width="160"
+           Height="160"
+           Stretch="Uniform"
+           HorizontalAlignment="Left"
+           VerticalAlignment="Center"
+           Margin="558,0,0,0"
+           d:Source="/Resources/Dictionaries/Animals/Images/Monsters/Monster_1/Monster_1.png"/>
+
+        </Grid>
+
+
+        <!-- 🟦 Твій оригінальний блок слова/відповіді -->
+        <StackPanel VerticalAlignment="Top"
+                    HorizontalAlignment="Center"
+                    Width="350"
+                    Margin="0,236,0,0">
+
+            <TextBlock x:Name="WordText"
+                       Text="Слово"
+                       Foreground="White"
+                       FontSize="26"
+                       HorizontalAlignment="Center"
+                       Margin="0 0 0 20"/>
+
+            <TextBox x:Name="AnswerBox"
+                     Height="35"
+                     FontSize="18"
+                     Margin="0 0 0 20"/>
+
+            <Button Content="Відповісти"
+                    Height="40"
+                    Background="#3A8DFF"
+                    Foreground="White"
+                    Click="Answer_Click"
+                    IsDefault="True"/>
+
+            <TextBlock x:Name="ResultText"
+                       Text=""
+                       Foreground="White"
+                       FontSize="14"
+                       HorizontalAlignment="Center"
+                       Margin="0 20 0 0"
+                       Width="331"/>
+        </StackPanel>
+
+    </Grid>
+
+</Window>

@@ -1,4 +1,6 @@
-﻿using System;
+﻿#pragma warning disable CA1416
+
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
@@ -23,7 +25,6 @@ namespace LinguaFight.Windows
 
         private UserManager _userManager;
 
-        // Подія завершення тренування
         public event Action? TrainingCompleted;
 
         public TrainingWindow(UserManager userManager, string dictionaryName, int timerSeconds)
@@ -34,20 +35,42 @@ namespace LinguaFight.Windows
             _timerSeconds = timerSeconds;
 
             string filePath = Path.Combine(
-      AppDomain.CurrentDomain.BaseDirectory,
-      "Resources",
-      "Dictionaries",
-      dictionaryName,
-      $"{dictionaryName}.json"
-  );
-
+                AppDomain.CurrentDomain.BaseDirectory,
+                "Resources",
+                "Dictionaries",
+                dictionaryName,
+                $"{dictionaryName}.json"
+            );
 
             _dictionary = DictionaryLoader.LoadEncrypted(filePath)!;
 
+            // ⭐ Повернутий звук відкриття вікна
+            PlayTrainingStartSound();
+
             UpdateCoinsDisplay();
             ShowNextWord();
+        }
 
-            PlayTrainingStartSound();
+        // ⭐ Звук відкриття вікна (повернуто)
+        private void PlayTrainingStartSound()
+        {
+            try
+            {
+                string soundPath = Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory,
+                    "Resources",
+                    "Sounds",
+                    "training_start.wav"
+                );
+
+                if (!File.Exists(soundPath))
+                    return;
+
+                SoundPlayer player = new SoundPlayer(soundPath);
+                player.Load();
+                player.Play();
+            }
+            catch { }
         }
 
         private void UpdateCoinsDisplay()
@@ -65,27 +88,6 @@ namespace LinguaFight.Windows
                     "Resources",
                     "Sounds",
                     "coin.wav"
-                );
-
-                if (!File.Exists(soundPath))
-                    return;
-
-                SoundPlayer player = new SoundPlayer(soundPath);
-                player.Load();
-                player.Play();
-            }
-            catch { }
-        }
-
-        private void PlayTrainingStartSound()
-        {
-            try
-            {
-                string soundPath = Path.Combine(
-                    AppDomain.CurrentDomain.BaseDirectory,
-                    "Resources",
-                    "Sounds",
-                    "training_start.wav"
                 );
 
                 if (!File.Exists(soundPath))
@@ -161,9 +163,8 @@ namespace LinguaFight.Windows
             if (userAnswer == correct)
             {
                 int coinsEarned = 0;
-                int delay = 0; // миттєве закриття за замовчуванням
+                int delay = 0;
 
-                // Монети тільки якщо відповідь правильна з першого разу
                 if (_waitingForCorrectAnswer && _userManager.CurrentUser != null)
                 {
                     coinsEarned = correct.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
@@ -176,7 +177,7 @@ namespace LinguaFight.Windows
                     PulseCoinsDisplay();
                     PlayCoinSound();
 
-                    delay = 1500; // пауза тільки коли є анімація монет
+                    delay = 1500;
                 }
 
                 Task.Delay(delay).ContinueWith(_ =>
@@ -190,7 +191,6 @@ namespace LinguaFight.Windows
             }
             else
             {
-                // ❗ Помилка → монети більше не даємо
                 _waitingForCorrectAnswer = false;
 
                 ResultText.Text = $"Правильна відповідь: {correct}";
@@ -206,3 +206,5 @@ namespace LinguaFight.Windows
         }
     }
 }
+
+#pragma warning restore CA1416

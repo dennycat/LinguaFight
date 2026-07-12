@@ -135,15 +135,28 @@
                     Foreground="White"
                     Click="Answer_Click"
                     IsDefault="True"/>
-
             <TextBlock x:Name="ResultText"
-                       Text=""
-                       Foreground="White"
-                       FontSize="14"
-                       HorizontalAlignment="Center"
-                       Margin="0 20 0 0"
-                       Width="331"/>
+           Text=""
+           Foreground="White"
+           FontSize="14"
+           FontWeight="Bold"
+           Width="330"/>
+
+
+
         </StackPanel>
+        <!-- 🔘 Кнопка виходу з бою -->
+        <Button x:Name="ExitBattleButton"
+        Content="Вийти"
+        Width="120"
+        Height="40"
+        Background="#FF3A3A"
+        Foreground="White"
+        FontWeight="Bold"
+        HorizontalAlignment="Left"
+        VerticalAlignment="Bottom"
+        Margin="20,0,0,20"
+        Click="ExitBattleButton_Click"/>
 
     </Grid>
 

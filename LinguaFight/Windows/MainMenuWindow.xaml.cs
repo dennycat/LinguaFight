@@ -130,14 +130,26 @@ namespace LinguaFight
         // ⭐ Правильний метод для кнопки "Бій"
         private void Battle_Click(object sender, RoutedEventArgs e)
         {
-            BattleWindow window = new BattleWindow();
+            if (_selectedDictionary is null)
+            {
+                MessageBox.Show("Спочатку виберіть словник.");
+                return;
+            }
+
+            var window = new BattleWindow(_userManager, _selectedDictionary);
             window.Show();
         }
 
-        // Якщо десь використовується FightButton_Click — лишаємо
+        // ⭐ Якщо десь використовується FightButton_Click — лишаємо
         private void FightButton_Click(object sender, RoutedEventArgs e)
         {
-            BattleWindow window = new BattleWindow();
+            if (_selectedDictionary is null)
+            {
+                MessageBox.Show("Спочатку виберіть словник.");
+                return;
+            }
+
+            var window = new BattleWindow(_userManager, _selectedDictionary);
             window.Show();
         }
     }
